@@ -1,3 +1,9 @@
+require 'pry'
 def alphabetize(arr)
-  # code here
-end
+
+esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+
+  arr.sort_by do |words|
+    words.chars.map { |c| esperanto.index(c) }
+    end
+  end
